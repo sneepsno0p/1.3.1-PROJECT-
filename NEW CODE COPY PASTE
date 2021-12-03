@@ -1,0 +1,19 @@
+import turtle as trtl
+#Food item + character images will be indivdual turtles
+sus = trtl.Turtle()
+cj = trtl.Turtle()
+spag = trtl.Turtle()
+lvp = trtl.Turtle()
+mc = trtl.Turtle()
+lef = trtl.Turtle()
+old = trtl.Turtle()
+print("Click on a food to choose it.")
+def sus_clicked():
+  yeet = input("Which flavor?")
+  print("???: Ah, it doesn't matter")
+epic = {"ds":"e"}
+print(epic["ds"])
+wn = trtl.Screen()
+sus.onclick(sus_clicked)
+wn.bgpic("NAWS2.gif")
+wn.mainloop()
