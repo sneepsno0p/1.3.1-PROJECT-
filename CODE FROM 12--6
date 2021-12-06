@@ -1,0 +1,53 @@
+import turtle as trtl
+import random as rand
+trtl.penup()
+trtl.shape("triangle")
+trtl.shapesize(2)
+sus = trtl.Turtle()
+alphabetti = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
+die = rand.randrange(len(alphabetti))
+drawer = trtl.Turtle()
+
+drawer.color("white")
+drawer.write(alphabetti[die], font=("Comic Sans MS", 50, "bold")) 
+#arrow key functions + arrow key stop-moving functions
+def forward():
+  trtl.forward(10)
+
+def backward():
+  trtl.backward(10)
+
+def left():
+  trtl.left(10)
+
+def right():
+  trtl.right(10)
+
+wn = trtl.Screen()
+
+wn.bgpic("NAWS2.gif")
+
+sus.shape("circle")
+sus.shapesize(3)
+sus.penup()
+sus.goto(-150,-200)
+print("Click on a food to choose it.")
+def sus_clicked():
+  yeet = input("Which flavor?")
+  print("???: Ah, it doesn't matter")
+#epic = {"ds":"e"}
+#print(epic["ds"])
+
+
+#these keybind the functions to corresponding arrow keys (onkeypress makes the function run for
+# as long as the arrow key is pressed) 
+wn.onkeypress(sus_clicked,alphabetti[die])
+wn.onkeypress(forward, "Up")
+wn.onkeypress(backward, "Down")
+wn.onkeypress(left, "Left")
+wn.onkeypress(right, "Right")
+
+wn.mainloop()
+
+wn.listen()
+wn.mainloop()
