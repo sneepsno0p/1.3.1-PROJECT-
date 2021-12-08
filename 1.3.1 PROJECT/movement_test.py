@@ -1,20 +1,21 @@
-import turtle
-turtle.penup()
-
+import turtle as player
+player.penup()
+player.shape("triangle")
+player.shapesize(2)
 #arrow key functions + arrow key stop-moving functions
 def forward():
-  turtle.forward(10)
+  player.forward(10)
 
 def backward():
-  turtle.backward(10)
+  player.backward(10)
 
 def left():
-  turtle.left(10)
+  player.left(10)
 
 def right():
-  turtle.right(10)
+  player.right(10)
 
-screen = turtle.Screen()
+screen = player.Screen()
 #these keybind the functions to corresponding arrow keys (onkeypress makes the function run for
 # as long as the arrow key is pressed) 
 screen.onkeypress(forward, "Up")
