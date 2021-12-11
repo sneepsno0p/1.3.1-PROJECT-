@@ -1,0 +1,12 @@
+import turtle as trtl
+wn = trtl.Screen()
+wn.bgpic("NAWS2.gif")
+drawer2 = trtl.Turtle()
+drawer2.pencolor("white")
+drawer2.hideturtle()
+drawer2.penup()
+drawer2.goto(0,-300)
+drawer2.pensize(200)
+drawer2.pendown()
+drawer2.forward(0)
+wn.mainloop()
